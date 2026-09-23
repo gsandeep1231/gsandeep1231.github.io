@@ -13,10 +13,8 @@
     .card{width:min(720px,100%);background:#fff;border:1px solid #dbe6f0;border-radius:28px;box-shadow:0 24px 70px rgba(21,52,80,.12);overflow:hidden}
     .accent{height:8px;background:var(--gm)}
     .content{padding:34px}
-    .brand{display:flex;align-items:center;gap:16px;margin-bottom:36px}
-    .gm-logo{width:66px;height:66px;border:5px solid var(--gm);border-radius:16px;display:grid;place-items:center;color:var(--gm);font-weight:800;font-size:38px;line-height:1;letter-spacing:-3px;position:relative}
-    .gm-logo::after{content:"";position:absolute;width:24px;height:4px;background:var(--gm);bottom:12px;right:10px;border-radius:3px}
-    .brand-name{color:var(--gm);font-size:28px;letter-spacing:.08em;text-transform:lowercase;font-weight:650}
+    .brand{display:flex;align-items:center;margin-bottom:36px}
+    .brand img{display:block;height:54px;width:auto;max-width:100%}
     h1{font-size:clamp(36px,7vw,58px);line-height:1.02;margin:0 0 16px;letter-spacing:-.035em}
     .role{font-size:clamp(21px,4vw,28px);margin:0 0 6px;font-weight:550}
     .team{color:var(--muted);font-size:clamp(18px,3.5vw,23px);margin:0}
@@ -26,7 +24,7 @@
     .btn{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:14px;text-decoration:none;font-weight:700;font-size:15px;padding:0 14px;border:1px solid var(--line);color:var(--ink);background:#fff}
     .btn.primary{background:var(--gm);border-color:var(--gm);color:#fff}
     .footer{padding:0 34px 28px;color:#94a3b8;font-size:13px;text-align:center}
-    @media(max-width:560px){body{padding:14px}.content{padding:26px}.brand{margin-bottom:28px}.brand-name{font-size:21px;letter-spacing:.06em}.gm-logo{width:58px;height:58px;font-size:33px}.actions{grid-template-columns:1fr}.footer{padding:0 26px 24px}}
+    @media(max-width:560px){body{padding:14px}.content{padding:26px}.brand{margin-bottom:28px}.brand img{height:44px}.actions{grid-template-columns:1fr}.footer{padding:0 26px 24px}}
   </style>
 </head>
 <body>
@@ -34,8 +32,7 @@
     <div class="accent"></div>
     <section class="content">
       <div class="brand" aria-label="General Motors">
-        <div class="gm-logo" aria-hidden="true">gm</div>
-        <div class="brand-name">general motors</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/General_motors_logo_with_wordmark.svg" alt="General Motors logo" />
       </div>
       <h1>Sandeep Gangundi</h1>
       <p class="role">Principal AI/ML Engineer</p>
